@@ -1,33 +1,142 @@
+/* globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@font-face {
+  font-family: "Malefissent";
+  src: url("../../public/fonts/font.ttf") format("truetype");
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  background-color: #d6c0c2;
+  font-family: "Malefissent", sans-serif;
+  color: #7c150c;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 300px) {
+  .ornek {
+    margin-top: -170px;
+    margin-left: 55px;
   }
+}
+@media (min-width: 305px) {
+  .ornek {
+    margin-top: -172px;
+    margin-left: 55px;
+  }
+}
+@media (min-width: 310px) {
+  .ornek {
+    margin-top: -174px;
+    margin-left: 55px;
+  }
+}
+@media (min-width: 315px) {
+  .ornek {
+    margin-top: -176px;
+    margin-left: 55px;
+  }
+}
+@media (min-width: 320px) {
+  .ornek {
+    margin-top: -178px;
+    margin-left: 57px;
+  }
+}
+
+@media (min-width: 325px) {
+  .ornek {
+    margin-top: -180px;
+    margin-left: 57px;
+  }
+}
+@media (min-width: 330px) {
+  .ornek {
+    margin-top: -182px;
+    margin-left: 59px;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0; /* Начальная позиция за пределами экрана слева */
+  }
+  100% {
+    background-position: 200px 0; /* Конечная позиция за пределами экрана справа */
+  }
+}
+
+@keyframes horseWalk {
+  0% {
+    transform: translateX(-200%);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(10%) rotateY(180deg);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.horse-animation {
+  animation: horseWalk 15s linear infinite;
+}
+
+@keyframes zoomInAndOut {
+  0% {
+    transform: scale(1); /* Изначальный размер */
+  }
+  50% {
+    transform: scale(1.2); /* Увеличение до 120% от изначального размера */
+  }
+  100% {
+    transform: scale(1); /* Возвращение к изначальному размеру */
+  }
+}
+
+.urta-animation {
+  animation: zoomInAndOut 10s ease-in-out infinite; /* Применяем анимацию с продолжительностью 4 секунды и зацикленной */
+}
+
+@keyframes tiltAnimation {
+  0% {
+    transform: rotate(0deg); /* Начальный угол наклона */
+  }
+  50% {
+    transform: rotate(20deg); /* Угол наклона вправо */
+  }
+  100% {
+    transform: rotate(-20deg); /* Угол наклона влево */
+  }
+}
+
+.tilt-animation {
+  animation: tiltAnimation 10s ease-in-out infinite alternate; /* Применяем анимацию с продолжительностью 4 секунды, зацикленной и чередующейся */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0; /* Начальная позиция за пределами экрана слева */
+  }
+  100% {
+    background-position: 200px 0; /* Конечная позиция за пределами экрана справа */
+  }
+}
+
+.shimmer-text {
+  color: transparent; /* Делаем текст прозрачным */
+  background: linear-gradient(
+    to right,
+    #7c150c,
+    #b61919
+  ); /* Задаем градиент для эффекта сверкания */
+  background-clip: text; /* Этот стиль делает градиент видимым только внутри текста */
+  -webkit-background-clip: text; /* Для поддержки браузеров на основе WebKit (например, Chrome, Safari) */
+  animation: shimmer 10s infinite linear; /* Запускаем анимацию сверкания */
 }
