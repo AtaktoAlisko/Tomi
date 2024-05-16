@@ -5,7 +5,7 @@ import Tomiris from "../../../public/images/Tomiris.png";
 import { useState } from "react";
 import { useEffect } from "react";
 import muz from "../../assets/muzik.mp3";
-import styles from "./main.module.scss";
+import styles from "./Main.module.scss";
 import proigr from "../../../public/images/proigr.png";
 
 export default function Main() {
