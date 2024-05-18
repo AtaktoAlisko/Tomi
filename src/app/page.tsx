@@ -10,7 +10,7 @@ import map from "../../public/images/map.png";
 
 export default function Home() {
   return (
-    <main className="flex flex-col  items-center">
+    <main className="flex flex-col  items-center ">
       <Main />
       <Image
         className=" mt-10  tilt-animation "
@@ -19,7 +19,7 @@ export default function Home() {
         width={300}
         height={300}
       />
-      <div className="mt-10 text-center text-[24px] sm:text-[22px] shimmer-text">
+      <div className="mt-10 text-center text-[24px] sm:text-[22px]  shimmer-text">
         <p className="">Құрметті қонақтар!</p>
         <p className="">Cіз(дер)ді қызымыз</p>
         <p className="">Томирисіміздін</p>
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
 
       <Image
-        className="mt-10 "
+        className="mt-10 mb-10 "
         height={200}
         width={400}
         src={calendar}

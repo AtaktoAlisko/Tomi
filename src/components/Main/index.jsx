@@ -28,7 +28,7 @@ export default function Main() {
   }
 
   return (
-    <div className="flex flex-col items-center mt-20 mb-20 ">
+    <div className="flex flex-col items-center mt-10 mb-20 ">
        <div className="absolute sm:left-10 sm:top-10 min-w-[300px]: left-5 top-20">
         <button
           className={`${styles.muzik} ${isPlaying ? "animate-spin" : ""} `}
@@ -46,7 +46,7 @@ export default function Main() {
         height={300}
       />
       <p className="shimmer-text text-[30px] sm:text-[30px] mb-5">1 Жас</p>
-      <p className=" shimmer-text text-[30px] sm:text-[30px]">Түсау кесер</p>
+      <p className=" shimmer-text text-[30px] sm:text-[30px]">Тұсау кесер</p>
     </div>
   );
 }
