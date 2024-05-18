@@ -10,6 +10,7 @@
     align-items: center;
     padding: 20px;
     text-align: start;
+   
   }
 
   .wishes {
@@ -56,6 +57,7 @@
   }
   .radio {
     margin: 15px;
+    color: #800000;
 
     input[type="radio"] {
       margin-right: 5px;
@@ -68,6 +70,7 @@
       border-radius: 50%;
       outline: none;
       cursor: pointer;
+      
     }
 
     label {

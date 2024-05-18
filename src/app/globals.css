@@ -1,6 +1,5 @@
 /* globals.css */
 @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
 @font-face {
   font-family: "Malefissent";
   src: url("../../public/fonts/font.ttf") format("truetype");
@@ -12,38 +11,151 @@
 
 body {
   margin: 0;
+  background-color: #d6c0c2;
   font-family: "Malefissent", sans-serif;
+  /* background-image: url("../../public/images/backr3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover; */
+  /* background: linear-gradient(135deg, #A0522D, #FFD700, #8B0000); */
+  /* background: linear-gradient(135deg, #FFD700, #40E0D0, #008080); */
+
   background: linear-gradient(135deg, #f0f0f0, #486d8e);
 }
 
-/* Оптимизированные медиа-запросы для .ornek */
-@media (min-width: 300px) and (max-width: 359px) {
+@media (min-width: 300px) {
   .ornek {
-    margin-top: calc(-170px - (172px - 170px) * ((100vw - 300px) / (359px - 300px)));
+    margin-top: -210px;
+    margin-left: 53px;
+  }
+}
+@media (min-width: 305px) {
+  .ornek {
+    margin-top: -212px;
     margin-left: 55px;
   }
 }
-
-@media (min-width: 360px) and (max-width: 399px) {
+@media (min-width: 310px) {
   .ornek {
-    margin-top: calc(-200px - (220px - 200px) * ((100vw - 360px) / (399px - 360px)));
-    margin-left: 64px;
+    margin-top: -215px;
+    margin-left: 55px;
+  }
+}
+@media (min-width: 315px) {
+  .ornek {
+    margin-top: -217px;
+    margin-left: 55px;
+  }
+}
+@media (min-width: 320px) {
+  .ornek {
+    margin-top: -220px;
+    margin-left: 57px;
   }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 325px) {
   .ornek {
     margin-top: -220px;
+    margin-left: 57px;
+  }
+}
+@media (min-width: 330px) {
+  .ornek {
+    margin-top: -222px;
+    margin-left: 59px;
+  }
+}
+@media (min-width: 335px) {
+  .ornek {
+    margin-top: -225px;
+    margin-left: 59px;
+  }
+}
+@media (min-width: 340px) {
+  .ornek {
+    margin-top: -228px;
+    margin-left: 60px;
+  }
+}
+@media (min-width: 345px) {
+  .ornek {
+    margin-top: -230px;
+    margin-left: 64px;
+  }
+}
+@media (min-width: 350px) {
+  .ornek {
+    margin-top: -232px;
+    margin-left: 64px;
+  }
+}
+@media (min-width: 355px) {
+  .ornek {
+    margin-top: -236px;
+    margin-left: 64px;
+  }
+}
+@media (min-width: 360px) {
+  .ornek {
+    margin-top: -238px;
+    margin-left: 64px;
+  }
+}
+@media (min-width: 360px) {
+  .ornek {
+    margin-top: -240px;
+    margin-left: 64px;
+  }
+}
+@media (min-width: 370px) {
+  .ornek {
+    margin-top: -242px;
+    margin-left: 66px;
+  }
+}
+@media (min-width: 375px) {
+  .ornek {
+    margin-top: -245px;
     margin-left: 68px;
+  }
+}
+@media (min-width: 370px) {
+  .ornek {
+    margin-top: -248px;
+    margin-left: 68px;
+  }
+}
+@media (min-width: 383px) {
+  .ornek {
+    margin-top: -250px;
+    margin-left: 68px;
+  }
+}
+@media (min-width: 387px) {
+  .ornek {
+    margin-top: -252px;
+    margin-left: 69px;
+  }
+}
+@media (min-width: 395px) {
+  .ornek {
+    margin-top: -256px;
+    margin-left: 70px;
+  }
+}
+@media (min-width: 400px) {
+  .ornek {
+    margin-top: -258px;
+    margin-left: 70px;
   }
 }
 
 @keyframes shimmer {
   0% {
-    background-position: 200% center;
+    background-position: -200px 0; /* Начальная позиция за пределами экрана слева */
   }
   100% {
-    background-position: -200% center;
+    background-position: 200px 0; /* Конечная позиция за пределами экрана справа */
   }
 }
 
@@ -68,41 +180,181 @@ body {
 
 @keyframes zoomInAndOut {
   0% {
-    transform: scale(1);
+    transform: scale(1); /* Изначальный размер */
   }
   50% {
-    transform: scale(1.2);
+    transform: scale(1.2); /* Увеличение до 120% от изначального размера */
   }
   100% {
-    transform: scale(1);
+    transform: scale(1); /* Возвращение к изначальному размеру */
   }
 }
 
 .urta-animation {
-  animation: zoomInAndOut 10s ease-in-out infinite;
+  animation: zoomInAndOut 10s ease-in-out infinite; /* Применяем анимацию с продолжительностью 4 секунды и зацикленной */
 }
 
 @keyframes tiltAnimation {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Начальный угол наклона */
   }
   50% {
-    transform: rotate(20deg);
+    transform: rotate(20deg); /* Угол наклона вправо */
   }
   100% {
-    transform: rotate(-20deg);
+    transform: rotate(-20deg); /* Угол наклона влево */
   }
 }
 
 .tilt-animation {
-  animation: tiltAnimation 10s ease-in-out infinite alternate;
+  animation: tiltAnimation 10s ease-in-out infinite alternate; /* Применяем анимацию с продолжительностью 4 секунды, зацикленной и чередующейся */
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0; /* Начальная позиция за пределами экрана слева */
+  }
+  100% {
+    background-position: 200px 0; /* Конечная позиция за пределами экрана справа */
+  }
 }
 
 .shimmer-text {
-  color: transparent;
-  background: linear-gradient(to right, #7c150c, #b61919, #f0f0f0, #486d8e);
-  background-size: 200% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: shimmer 2s linear infinite;
+  color: transparent; /* Делаем текст прозрачным */
+  background: linear-gradient(
+    to right,
+    #7c150c,
+    #b61919
+  ); /* Задаем градиент для эффекта сверкания */
+  background-clip: text; /* Этот стиль делает градиент видимым только внутри текста */
+  -webkit-background-clip: text; /* Для поддержки браузеров на основе WebKit (например, Chrome, Safari) */
+  animation: shimmer 10s infinite linear; /* Запускаем анимацию сверкания */
 }
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      100px
+    ); /* Adjust as needed for the desired movement */
+  }
+}
+
+.cloud {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+
+.movingImage {
+  position: absolute;
+  top: 1000px;
+  animation: move-left-right 10s linear infinite alternate;
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px);
+  }
+}
+
+.cloud {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.cloudd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.movingImage {
+  position: absolute;
+  top: 850px;
+  animation: move-left-right 10s linear infinite alternate;
+}
+
+.movingImage1 {
+  position: absolute;
+  top: 900px;
+  animation: move-right-left 10s linear infinite alternate;
+}
+@keyframes move-right-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clouddd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.movingImage2 {
+  position: absolute;
+  top: 1550px;
+  animation: move-left-right 10s linear infinite alternate;
+}
+
+.cloudddd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.movingImage3 {
+  position: absolute;
+  top: 1750px;
+  animation: move-right-left 10s linear infinite alternate;
+}
+
+.clouddddd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.movingImage4 {
+  position: absolute;
+  top: 2300px;
+  animation: move-left-right 10s linear infinite alternate;
+}
+.cloudddddd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.movingImage5 {
+  position: absolute;
+  top: 305  0px;
+  animation: move-left-right 10s linear infinite alternate;
+}
+.clouddddddd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+.movingImage6 {
+  position: absolute;
+  top: 3050px;
+  animation: move-left-right 10s linear infinite alternate;
+}
+
+.cloudddddddd {
+  position: fixed;
+  top: 0;
+  z-index: -1; /* Ensure it's in the background */
+}
+
+.movingImage5 {
+  position: absolute;
+  top: 2800px;
+  animation: move-right-left 10s linear infinite alternate;
+}
+

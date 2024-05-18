@@ -19,7 +19,7 @@ export default function Attendance() {
 
     setLoading(true);
     fetch(
-      "https://script.google.com/macros/s/AKfycbyp-VVf7afBotIsgC1eyVI0W7mRFyMcV9CtAetHuD6tHnOegquXUoCv-Gojfx8eHMo/exec",
+      "https://script.google.com/macros/s/AKfycbwqZkHbKEkoUVo_dHdWlsfuZRM09tvNNQU_2b-jrsNkdIJbzI-9uevB2atQf9roAsZqSA/exec",
       {
         method: "POST",
         body: formDatab,
@@ -52,7 +52,7 @@ export default function Attendance() {
     <div className={styles.App}>
       <div className="form center mb-20 mt-10">
         <p
-          className={`${styles.anketa } , text-center min-w-[300px] text-[22px] sm:text-[22px] mb-[10px] `}
+          className={`${styles.anketa} , text-center min-w-[300px] text-[22px] sm:text-[22px] mb-[10px] `}
         >
           Анкетаны толтыруыңызды сұраймыз
         </p>
@@ -120,7 +120,7 @@ export default function Attendance() {
                 </label>
               </div>
             </div>
-            <div className="flex-1 flex justify-center min-w-[300px]: mx-5">
+            <div className="flex-1  flex justify-center min-w-[300px]: mx-5">
               <button
                 className={styles.button}
                 type="submit"
