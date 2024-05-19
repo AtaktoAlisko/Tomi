@@ -146,7 +146,7 @@ export default function Home() {
 
       <div className="kurmet text-center mb-10 text-[26px] sm:text-[24px] shimmer-text">
         <p className="b"> Той иелері:</p>
-        <p className=" ">Әжесі:Айгуль</p>
+        <p className=" ">Апасы:Айгуль</p>
         <p className="">Ата-анасы:</p>
         <p className="">Алибек && Мөлдір</p>
       </div>
