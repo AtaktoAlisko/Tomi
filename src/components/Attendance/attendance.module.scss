@@ -3,7 +3,6 @@
   flex-direction: column;
   text-align: start;
   margin-top: 30px;
-  overflow: hidden;
 
   .form {
     display: flex;
@@ -11,7 +10,6 @@
     align-items: center;
     padding: 20px;
     text-align: start;
-   
   }
 
   .wishes {
@@ -71,7 +69,6 @@
       border-radius: 50%;
       outline: none;
       cursor: pointer;
-      
     }
 
     label {
@@ -103,11 +100,9 @@
 }
 
 .shimmer-text {
-  color: transparent; 
-  background: linear-gradient(to right, #7c150c, #9b0a0a); 
-  background-clip: text; 
-  -webkit-background-clip: text; 
-  animation: shimmer 5s infinite linear; 
+  color: transparent;
+  background: linear-gradient(to right, #7c150c, #9b0a0a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: shimmer 5s infinite linear;
 }
-
-
