@@ -9,9 +9,11 @@ import ornek from "../../public/images/ornek.png";
 import map from "../../public/images/map.png";
 import cloud from "../../public/images/cloud.png";
 import wolf from "../../public/images/wolf.png";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 export default function Home() {
   return (
     <main className="flex flex-col  items-center ">
+      <SpeedInsights />
       <Main />
       <Image
         className="  tilt-animation "
@@ -55,14 +57,14 @@ export default function Home() {
         width={180}
         height={140}
       />
-        <Image
+      <Image
         className=" mt-10 clouddddddd movingImage6  "
         src={cloud}
         alt="Tomiris"
         width={180}
         height={140}
       />
-       <Image
+      <Image
         className=" mt-10 cloudddddd movingImage5  "
         src={cloud}
         alt="Tomiris"
@@ -150,7 +152,6 @@ export default function Home() {
         <p className="">Ата-анасы:</p>
         <p className="">Алибек && Мөлдір</p>
       </div>
-     
 
       <Attendance />
     </main>
