@@ -13,6 +13,7 @@ body {
   margin: 0;
   background-color: #d6c0c2;
   font-family: "Malefissent", sans-serif;
+  overflow: hidden;
   /* background-image: url("../../public/images/backr3.jpeg");
   background-repeat: no-repeat;
   background-size: cover; */
@@ -332,7 +333,7 @@ body {
 }
 .movingImage5 {
   position: absolute;
-  top: 305  0px;
+  top: 305 0px;
   animation: move-left-right 10s linear infinite alternate;
 }
 .clouddddddd {
@@ -357,4 +358,3 @@ body {
   top: 2800px;
   animation: move-right-left 10s linear infinite alternate;
 }
-
